@@ -24,25 +24,79 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		18F7BC6A2E16F63E00D6F7DF /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		18F7BC7B2E16F64100D6F7DF /* LandmarksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LandmarksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		18F7BC852E16F64100D6F7DF /* LandmarksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LandmarksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F7BC6A2E16F63E00D6F7DF /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Landmarks.app; path = /Users/apple/Desktop/SwiftProjects/Landmarks/build/Debug/Landmarks.app; sourceTree = "<absolute>"; };
+		18F7BC7B2E16F64100D6F7DF /* LandmarksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = LandmarksTests.xctest; path = /Users/apple/Desktop/SwiftProjects/Landmarks/build/Debug/Landmarks.app/Contents/PlugIns/LandmarksTests.xctest; sourceTree = "<absolute>"; };
+		18F7BC852E16F64100D6F7DF /* LandmarksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = LandmarksUITests.xctest; path = "/Users/apple/Desktop/SwiftProjects/Landmarks/build/Debug/LandmarksUITests-Runner.app/Contents/PlugIns/LandmarksUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		18F7BC6C2E16F63E00D6F7DF /* Landmarks */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Landmarks;
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		18F7BCDC2E17255F00D6F7DF /* Exceptions for "Landmarks" folder in "Landmarks" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				LandmarksApp.swift,
+				Model/Landmark.swift,
+				Model/ModelData.swift,
+				"Preview Content/Preview Assets.xcassets",
+				Resources/landmarkData.json,
+				Views/CircleImage.swift,
+				Views/ContentView.swift,
+				Views/LandmarkRow.swift,
+				Views/MapView.swift,
+			);
+			target = 18F7BC692E16F63E00D6F7DF /* Landmarks */;
 		};
+		18F7BCDD2E17255F00D6F7DF /* Exceptions for "Landmarks" folder in "LandmarksUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				LandmarksApp.swift,
+				Model/Landmark.swift,
+				Model/ModelData.swift,
+				"Preview Content/Preview Assets.xcassets",
+				Resources/landmarkData.json,
+				Views/CircleImage.swift,
+				Views/ContentView.swift,
+				Views/LandmarkRow.swift,
+				Views/MapView.swift,
+			);
+			target = 18F7BC842E16F64100D6F7DF /* LandmarksUITests */;
+		};
+		18F7BCE32E17257E00D6F7DF /* Exceptions for "LandmarksTests" folder in "LandmarksTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				LandmarksUITests/LandmarksUITests.swift,
+				LandmarksUITests/LandmarksUITestsLaunchTests.swift,
+			);
+			target = 18F7BC7A2E16F64100D6F7DF /* LandmarksTests */;
+		};
+		18F7BCE42E17257E00D6F7DF /* Exceptions for "LandmarksTests" folder in "LandmarksUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				LandmarksUITests/LandmarksUITests.swift,
+				LandmarksUITests/LandmarksUITestsLaunchTests.swift,
+			);
+			target = 18F7BC842E16F64100D6F7DF /* LandmarksUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
 		18F7BC7E2E16F64100D6F7DF /* LandmarksTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				18F7BCE32E17257E00D6F7DF /* Exceptions for "LandmarksTests" folder in "LandmarksTests" target */,
+				18F7BCE42E17257E00D6F7DF /* Exceptions for "LandmarksTests" folder in "LandmarksUITests" target */,
+			);
 			path = LandmarksTests;
 			sourceTree = "<group>";
 		};
-		18F7BC882E16F64100D6F7DF /* LandmarksUITests */ = {
+		18F7BCD22E17255F00D6F7DF /* Landmarks */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LandmarksUITests;
+			exceptions = (
+				18F7BCDC2E17255F00D6F7DF /* Exceptions for "Landmarks" folder in "Landmarks" target */,
+				18F7BCDD2E17255F00D6F7DF /* Exceptions for "Landmarks" folder in "LandmarksUITests" target */,
+			);
+			path = Landmarks;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,21 +129,9 @@
 		18F7BC612E16F63E00D6F7DF = {
 			isa = PBXGroup;
 			children = (
-				18F7BC6C2E16F63E00D6F7DF /* Landmarks */,
+				18F7BCD22E17255F00D6F7DF /* Landmarks */,
 				18F7BC7E2E16F64100D6F7DF /* LandmarksTests */,
-				18F7BC882E16F64100D6F7DF /* LandmarksUITests */,
-				18F7BC6B2E16F63E00D6F7DF /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		18F7BC6B2E16F63E00D6F7DF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				18F7BC6A2E16F63E00D6F7DF /* Landmarks.app */,
-				18F7BC7B2E16F64100D6F7DF /* LandmarksTests.xctest */,
-				18F7BC852E16F64100D6F7DF /* LandmarksUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +148,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				18F7BC6C2E16F63E00D6F7DF /* Landmarks */,
 			);
 			name = Landmarks;
 			packageProductDependencies = (
@@ -154,7 +193,7 @@
 				18F7BC872E16F64100D6F7DF /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				18F7BC882E16F64100D6F7DF /* LandmarksUITests */,
+				18F7BCD22E17255F00D6F7DF /* Landmarks */,
 			);
 			name = LandmarksUITests;
 			packageProductDependencies = (
@@ -196,7 +235,7 @@
 			mainGroup = 18F7BC612E16F63E00D6F7DF;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 18F7BC6B2E16F63E00D6F7DF /* Products */;
+			productRefGroup = 18F7BC612E16F63E00D6F7DF;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
