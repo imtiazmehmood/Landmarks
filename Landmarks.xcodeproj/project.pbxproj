@@ -34,16 +34,25 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Assets.xcassets,
+				Badge/Badge.swift,
+				Badge/BadgeBackground.swift,
+				Badge/BadgeSymbol.swift,
+				Badge/HexagonParameters.swift,
+				Badge/RotatedBadgeSymbol.swift,
+				Helpers/CircleImage.swift,
+				Helpers/FavoriteButton.swift,
+				Helpers/MapView.swift,
+				Hike/Hike.swift,
+				Landmarks/LandmarkDetail.swift,
+				Landmarks/LandmarkList.swift,
+				Landmarks/LandmarkRow.swift,
 				LandmarksApp.swift,
 				Model/Landmark.swift,
 				Model/ModelData.swift,
 				"Preview Content/Preview Assets.xcassets",
+				Resources/hikeData.json,
 				Resources/landmarkData.json,
-				Views/CircleImage.swift,
 				Views/ContentView.swift,
-				Views/LandmarkList.swift,
-				Views/LandmarkRow.swift,
-				Views/MapView.swift,
 			);
 			target = 18F7BC692E16F63E00D6F7DF /* Landmarks */;
 		};
@@ -51,16 +60,24 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Assets.xcassets,
+				Badge/Badge.swift,
+				Badge/BadgeBackground.swift,
+				Badge/BadgeSymbol.swift,
+				Badge/HexagonParameters.swift,
+				Badge/RotatedBadgeSymbol.swift,
+				Helpers/CircleImage.swift,
+				Helpers/FavoriteButton.swift,
+				Helpers/MapView.swift,
+				Landmarks/LandmarkDetail.swift,
+				Landmarks/LandmarkList.swift,
+				Landmarks/LandmarkRow.swift,
 				LandmarksApp.swift,
 				Model/Landmark.swift,
 				Model/ModelData.swift,
 				"Preview Content/Preview Assets.xcassets",
+				Resources/hikeData.json,
 				Resources/landmarkData.json,
-				Views/CircleImage.swift,
 				Views/ContentView.swift,
-				Views/LandmarkList.swift,
-				Views/LandmarkRow.swift,
-				Views/MapView.swift,
 			);
 			target = 18F7BC842E16F64100D6F7DF /* LandmarksUITests */;
 		};

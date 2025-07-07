@@ -1,14 +1,10 @@
-//
-//  ModelData.swift
-//  Landmarks
-//
-//  Created by Apple on 04/07/2025.
-//
-
 import Foundation
 
-
-var landmarks:[Landmark] = load("landmarkData.json")
+@Observable
+class ModelData {
+    var landmarks:[Landmark] = load("landmarkData.json")
+    var hikes: [Hike] = load("hikeData.json")
+}
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

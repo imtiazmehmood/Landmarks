@@ -1,10 +1,3 @@
-//
-//  LandmarkRow.swift
-//  Landmarks
-//
-//  Created by Apple on 04/07/2025.
-//
-
 import SwiftUI
 
 
@@ -19,21 +12,17 @@ struct LandmarkRow: View {
             Text(landmark.name)
             
             Spacer()
+            
+            if landmark.isFavorite {
+                Image(systemName: "star.fill")
+                    .foregroundStyle(.yellow)
+            }
         }
     }
 }
 
-
-// #Preview("Turtle Rock") {
-//     LandmarkRow(landmark: landmarks[0])
-// }
-
-
-// #Preview("Salmon") {
-//     LandmarkRow(landmark: landmarks[1])
-// }
-
 #Preview {
+    let landmarks = ModelData().landmarks
     Group {
         LandmarkRow(landmark: landmarks[0])
         LandmarkRow(landmark: landmarks[1])
